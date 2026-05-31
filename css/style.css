@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0,0,0,0.75);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-login{
+    background-color: rgb(33, 33, 36);
+    width: 350%;
+    max-width: 900px;
+    margin: 250px auto; /* centraliza */
+    min-height: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.logo{
+    color:rgb(107, 54, 156);
+    font-family: Impact, sans-serif;
+    font-size:40px;
+    text-align: center;
+}
+
+input{
+    width: 80%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    align-self: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button{
+    width: 10%;
+    padding: 9px;
+    align-self: center;
+    background-color: rgb(107, 54, 156);
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(56, 27, 83);
+}
+
+ footer{
+    width: 100%;
+    
+ }
+ footer p {
+    font-size: 18px; /* Diminui o rodapé */
+    text-align: center;
+    color:rgb(93, 56, 128);
+  }
