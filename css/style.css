@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #333;
+    background: linear-gradient(to bottom, rgb(33, 33, 36), rgb(107, 54, 156));
 }
 
 .overlay{
@@ -36,6 +36,25 @@ body{
     font-family: Impact, sans-serif;
     font-size:40px;
     text-align: center;
+}
+
+   /*Animação da logo*/
+.logo{
+    font-size 3rem;
+    color: rgb(107, 54, 156);
+    text-align: center;
+
+    animation: entradaLogo 2s ease-out forwards;
+}
+
+@keyframes entradaLogo{
+    from{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+    }
 }
 
 input{
