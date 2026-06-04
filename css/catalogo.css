@@ -2,16 +2,14 @@
     position: fixed;
     top: 0;
     left: 0;
-
     width: 220px;
     height: 100vh;
-
     background-color: #0f0f0f;
     padding-top: 20px;
 }
 
 .sidebar .logo {
-    color: #e50914;
+    color: rgb(107, 54, 156);
     text-align: center;
     margin-bottom: 30px;
     font-size: 24px;
@@ -22,7 +20,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -33,11 +30,21 @@
     color: white;
     cursor: pointer;
     border-radius: 8px;
-
     transition: 0.3s;
 }
 
 .sidebar li:hover {
     background-color: rgb(107, 54, 156);
     transform: translateX(6px);
+}
+
+.container {
+    width: 90%;
+    background-color: rgb(107, 54, 156);
+    margin-left: 220px;
+    padding: 20px;
+    min-height: 100vh;
+    color: white;
+    
+
 }
