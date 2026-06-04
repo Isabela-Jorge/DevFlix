@@ -40,11 +40,15 @@
 
 .container {
     width: 90%;
-    background-color: rgb(107, 54, 156);
+    
+     background: linear-gradient(
+        to bottom,
+        #0b0b0b,
+        #141414,
+        rgba(107, 54, 156, 0.2));
+
     margin-left: 220px;
     padding: 20px;
     min-height: 100vh;
     color: white;
-    
-
 }
