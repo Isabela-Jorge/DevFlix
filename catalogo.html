@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,57 @@
 
     <link rel="stylesheet" href="css/catalogo.css">
 </head>
-<body> 
+
+<body>
     <aside class="sidebar">
 
-    <h1 class="logo">DEVFLIX</h1>
-    <nav>
-    <ul>
-        <li>Catálogo</li>
-        <li>Favoritos</li>
-        <li>Não gostei</li>
-        <li>Assistir depois</li>
-        <li>Configurações</li>
-        <li>Perfil</li>
+        <h1 class="logo">DEVFLIX</h1>
+        <nav>
+            <ul>
+                <li>Catálogo</li>
+                <li>Favoritos</li>
+                <li>Não gostei</li>
+                <li>Assistir depois</li>
+                <li>Configurações</li>
+                <li>Perfil</li>
 
-    </ul>
-    </nav>
+            </ul>
+        </nav>
     </aside>
 
-    <main class="container">
-    <selection id="banner">
-    <img src="assets/img/banner.jpg" alt="Banner Pricipal">
-    </selection>
+    <section id="banner" class="banner">
+        <div class="carousel">
+            <div class="slides">
 
+                <div class="slide active">
+                    <img src="assets/img/banner1.jpg" alt="Filme 1">
+                </div>
+
+                <div class="slide active">
+                    <img src="assets/img/banner2.jpg" alt="Filme 2">
+                </div>
+
+                <div class="slide active">
+                    <img src="assets/img/banner3.jpg" alt="Filme 3">
+                </div>
+            </div>
+
+            <button
+            class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            
+        </div>
+
+    </section>
     <h2>Filmes Populares</h2>
 
-    <selection id="listaFilmes"
-    class="cards-container">
-    </selection>
+    <section id="listaFilmes" class="cards-container">
+    </section>
 
     </main>
 
     <script src="js/catalogo.js"></script>
 
 </body>
+
 </html>
