@@ -1,0 +1,18 @@
+/*lista*/
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+/*itens*/
+.sidebar li{
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/*hover*/
+.sidebar li:hover{
+    background-color: rgb(107, 54, 156);
+    transform: translateX(8px);
+}

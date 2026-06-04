@@ -1,97 +1,118 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(to bottom, rgb(33, 33, 36), rgb(107, 54, 156));
+/* Fundo da página */
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgb(33, 33, 36),
+        rgb(107, 54, 156)
+    );
 }
 
-.overlay{
+/* Camada escura (overlay) */
+.overplay {
     width: 100%;
-    height: 100vh;
-
-    background: rgba(0,0,0,0.75);
-
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container-login{
+/* Caixa do login */
+.container-login {
     background-color: rgb(33, 33, 36);
-    width: 350%;
-    max-width: 900px;
-    margin: 250px auto; /* centraliza */
-    min-height: 300px;
+    width: 90%;
+    max-width: 500px;
     padding: 40px;
     border-radius: 10px;
-    justify-content: center;
-
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-.logo{
-    color:rgb(107, 54, 156);
+/* Logo */
+.logo {
     font-family: Impact, sans-serif;
-    font-size:40px;
-    text-align: center;
-}
-
-   /*Animação da logo*/
-.logo{
-    font-size 3rem;
+    font-size: 3rem;
     color: rgb(107, 54, 156);
     text-align: center;
 
     animation: entradaLogo 2s ease-out forwards;
 }
 
-@keyframes entradaLogo{
-    from{
+/* Animação */
+@keyframes entradaLogo {
+    from {
         transform: translateX(-500px);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: translateX(0);
+        opacity: 1;
     }
 }
 
-input{
-    width: 80%;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-    align-self: center;
-}
+/* Formulário */
+form {
+    margin-top: 30px;
 
-form{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-button{
-    width: 10%;
-    padding: 9px;
-    align-self: center;
-    background-color: rgb(107, 54, 156);
+/* Inputs */
+input {
+    width: 100%;
+    padding: 15px;
     border: none;
     border-radius: 5px;
+    background-color: #1f1f1f; 
+    color: white;
+    outline: none;
 }
 
-button:hover{
+/* efeito ao clicar */
+input:focus {
+    box-shadow: 0 0 8px rgb(107, 54, 156);
+}
+
+/* Botão */
+button {
+    width: 120px;
+    padding: 12px;
+    align-self: center;
+    background-color: rgb(107, 54, 156);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
     background-color: rgb(56, 27, 83);
 }
 
- footer{
-    width: 100%;
-    
- }
- footer p {
-    font-size: 18px; /* Diminui o rodapé */
+/* Mensagem de erro */
+#mensagemErro {
     text-align: center;
-    color:rgb(93, 56, 128);
-  }
+    color: red;
+    min-height: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}

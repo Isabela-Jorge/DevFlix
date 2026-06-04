@@ -17,7 +17,7 @@ function validarlogin() {  // Esta função verifica se os dados digitados são 
         senha.value === usuarioSistema.senha
     ) {
         localStorage.setItem("logado", "true");  // Salva informação no navegador indicando que o usuário está logado
-        localStorage.location.href = "catalogo.html";  // Redireciona para a página do catálogo
+        window.location.href = "catalogo.html";  // Redireciona para a página do catálogo
     }
 
     else {  // Exibe mensagem de erro
