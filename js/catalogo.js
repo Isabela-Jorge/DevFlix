@@ -1,63 +1,97 @@
-// 1. Banco de dados simulado (Array de objetos)
+// Lista de filmes
 const filmes = [
-    { id: 1, titulo: "Breaking Code", imagem: "assets/img/filme1.jpg", categoria: "Populares" },
-    { id: 2, titulo: "The CSS Matrix", imagem: "assets/img/filme2.jpg", categoria: "Populares" },
-    { id: 3, titulo: "Lord of the Scripts", imagem: "assets/img/filme3.jpg", categoria: "Populares" }
+    {
+        id: 1,
+        titulo: "Brooklyn 99",
+        imagem: "assets/img/brooklin99.jpg"
+    },
+    {
+        id: 2,
+        titulo: "Gilmore Girls",
+        imagem: "assets/img/gilmoregirls.jpg"
+    },
+    {
+        id: 3,
+        titulo: "La Casa de Papel",
+        imagem: "assets/img/lacasadepapel.jpg"
+    },
+    {
+        id: 4,
+        titulo: "Round 6",
+        imagem: "assets/img/round6.jpg"
+    },
+    {
+        id: 4,
+        titulo: "Stranger Things",
+        imagem: "assets/img/strangerthings.jpg"
+    },
+    {
+        id: 5,
+        titulo: "The Chosen",
+        imagem: "assets/img/thechosen.jpg" 
+    },
+    {
+         id: 6,
+        titulo: "The Middle",
+        imagem: "assets/img/themiddle.jpg"
+    },
+    {
+         id: 7,
+        titulo: "Todo Mundo Odeia o Chris",
+        imagem: "assets/img/todomundoodeiaochris.jpg"
+    }
+
 ];
 
-// 2. Seleção de elementos do HTML (DOM)
-const listaFilmes = document.getElementById('listaFilmes');
-const itensMenu = document.querySelectorAll('.sidebar nav ul li');
+// Container dos filmes
+const listaFilmes = document.getElementById("listaFilmes");
 
-// 3. Função para renderizar os filmes na tela
-function carregarFilmes(lista) {
-    listaFilmes.innerHTML = ""; // Limpa o container antes de carregar
-    
-    lista.forEach(filme => {
-        const card = document.createElement('div');
-        card.classList.add('card-filme'); // Adicione estilização para essa classe no seu CSS
-        
+// Cria os cards na tela
+function carregarFilmes() {
+
+    listaFilmes.innerHTML = "";
+
+    filmes.forEach((filme) => {
+
+        const card = document.createElement("div");
+
+        card.classList.add("card-filme");
+
         card.innerHTML = `
             <img src="${filme.imagem}" alt="${filme.titulo}">
+
             <h3>${filme.titulo}</h3>
+
             <div class="botoes-card">
-                <button onclick="adicionarFavorito(${filme.id})">⭐</button>
-                <button onclick="marcarNaoGostei(${filme.id})">👎</button>
+                <button onclick="adicionarFavorito(${filme.id})">
+                    ❤️ Favoritar
+                </button>
+
+                <button onclick="marcarNaoGostei(${filme.id})">
+                    👎 Não gostei
+                </button>
             </div>
         `;
-        
+
         listaFilmes.appendChild(card);
     });
 }
 
-// 4. Funções de Interação (Exemplos de lógica)
+// Favoritar
 function adicionarFavorito(id) {
-    console.log(`Filme ${id} adicionado aos Favoritos.`);
+    console.log("Favoritou o filme:", id);
 }
 
+// Não gostei
 function marcarNaoGostei(id) {
-    console.log(`Filme ${id} marcado como 'Não gostei'.`);
+    console.log("Não gostou do filme:", id);
 }
 
-// 5. Evento de clique para o Menu Lateral (Sidebar)
-itensMenu.forEach(item => {
-    item.addEventListener('click', () => {
-        // Remove a classe ativa anterior se houver
-        itensMenu.forEach(i => i.classList.remove('active'));
-        // Adiciona classe ativa no item clicado
-        item.classList.add('active');
-        
-        console.log(`Você navegou para: ${item.innerText}`);
-        // Aqui você pode criar lógicas para filtrar a lista de filmes exibida
-    });
-});
+// Carrega os filmes
+carregarFilmes();
 
-// 6. Inicialização do sistema
-document.addEventListener('DOMContentLoaded', () => {
-    carregarFilmes(filmes);
-});
 
-// carrossel
+// CARROSSEl
 
 const slides = document.querySelectorAll(".slide");
 const btnPrev = document.querySelector(".prev");
@@ -65,15 +99,17 @@ const btnNext = document.querySelector(".next");
 
 let slideAtual = 0;
 
+// Mostra um slide por vez
 function mostrarSlide(index) {
 
-    slides.forEach(slide => {
+    slides.forEach((slide) => {
         slide.style.display = "none";
     });
 
     slides[index].style.display = "block";
 }
 
+// Próximo slide
 btnNext.addEventListener("click", () => {
 
     slideAtual++;
@@ -85,6 +121,7 @@ btnNext.addEventListener("click", () => {
     mostrarSlide(slideAtual);
 });
 
+// Slide anterior
 btnPrev.addEventListener("click", () => {
 
     slideAtual--;
@@ -96,5 +133,5 @@ btnPrev.addEventListener("click", () => {
     mostrarSlide(slideAtual);
 });
 
-// Mostra o primeiro slide ao carregar
+// Primeiro slide
 mostrarSlide(slideAtual);
