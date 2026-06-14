@@ -56,3 +56,45 @@ itensMenu.forEach(item => {
 document.addEventListener('DOMContentLoaded', () => {
     carregarFilmes(filmes);
 });
+
+// carrossel
+
+const slides = document.querySelectorAll(".slide");
+const btnPrev = document.querySelector(".prev");
+const btnNext = document.querySelector(".next");
+
+let slideAtual = 0;
+
+function mostrarSlide(index) {
+
+    slides.forEach(slide => {
+        slide.style.display = "none";
+    });
+
+    slides[index].style.display = "block";
+}
+
+btnNext.addEventListener("click", () => {
+
+    slideAtual++;
+
+    if (slideAtual >= slides.length) {
+        slideAtual = 0;
+    }
+
+    mostrarSlide(slideAtual);
+});
+
+btnPrev.addEventListener("click", () => {
+
+    slideAtual--;
+
+    if (slideAtual < 0) {
+        slideAtual = slides.length - 1;
+    }
+
+    mostrarSlide(slideAtual);
+});
+
+// Mostra o primeiro slide ao carregar
+mostrarSlide(slideAtual);
