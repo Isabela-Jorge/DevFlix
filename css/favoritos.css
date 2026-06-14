@@ -5,3 +5,13 @@
     gap: 20px;
     margin-top: 20px;
 }
+.card-filmes{
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.card-filmes:hover{
+    transform: scale(1.05);
+}
