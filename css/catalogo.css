@@ -95,6 +95,7 @@ h2 {
 
 .card-filme:hover {
     transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 20px rgba(107,54,156,0.8);
 }
 
 .card-filme img {
@@ -104,11 +105,12 @@ h2 {
 }
 
 .card-filme h3 {
-    color: white;
-    text-align: center;
-    padding: 12px;
-    margin: 0;
-    font-size: 18px;
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 .botoes-card {
@@ -134,9 +136,9 @@ h2 {
 
 .cards-container {
     display: grid;
-    grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+    justify-content: center;
     gap: 20px;
-    padding: 20px;
 }
 
 .carrossel{

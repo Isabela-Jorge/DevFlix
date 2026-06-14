@@ -1,0 +1,13 @@
+header h1{
+    color: white;
+}
+
+#listarnaogostei{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 0;
+}
