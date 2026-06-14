@@ -4,8 +4,8 @@ card.classList.add("card-filme"); // adiciona uma classe para estilizar
 
 // conteudo do card
 card.innerHTML = ` 
-    <img src="assets/img/interestelar.jpg" alt="Interestelar">
-    <h3>Interestelar</h3>
+    <img src="assets/img/gilmoregirls.jpg" alt="Gilmore Girls">
+    <h3>Gilmore Girls</h3>
 `; 
 
 lista.appendChild(card); // Adiciona o card na página.( O método appendChild() adiciona um elemento filho dentro de outro.)
