@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/catalogo.css" />
+    <link rel="stylesheet" href="css/detalhes.css" />
+    <title>Detalhes filmes</title>
+  </head>
+  <body>
+
+    <aside class="sidebar">
+
+        <h1 class="logo">DEVFLIX</h1>
+        <nav>
+            <ul>
+
+                <li>
+                    <a href="catalogo.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="favoritos.html">Favoritos</a>
+                </li>
+
+                <li>
+                    <a href="naoGostei.html">Não Gostei</a>
+                </li>
+
+                <li>
+                    <a href="assistirdepois.html">Assistir Depois</a>
+                </li>
+
+                <li>
+                    <a href="configuracao.html">Configuração</a>
+                </li>
+
+                <li>
+                    <a href="perfil.html">Perfil</a>
+                </li>
+
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="containerM">
+
+        <img id="imagemFilme" src="" alt="Filme">
+
+        <h1 id="tituloFilme"></h1>
+
+        <p id="descricaoFilme"></p>
+
+       <p id="classificacaoFilme"></p>
+        
+         <div class="acoes">
+
+          <button id="Assistir">
+            &#11208 Assistir
+        </button>
+
+        <button id="btnFavorito">
+            &#129505 Favoritar
+        </button>
+
+        <button id="btnNaoGostei">
+          &#128078 Não gostei
+        </button>
+
+        <button id="btnAssistirDepois">
+            &#9200 Assistir depois
+        </button>
+
+    </div>
+
+    <section class="comentarios">
+
+        <h2>Comentários</h2>
+
+        <textarea id="comentario"></textarea>
+
+        <button id="btnComentar">
+            Enviar
+        </button>
+
+    </section>
+
+        <script src="js/detalhes.js"></script>
+  </body>
+
+</html>
