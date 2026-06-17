@@ -117,18 +117,6 @@ function carregarFilmes() {
             <img src="${filme.imagem}" alt="${filme.titulo}">
 
             <h3>${filme.titulo}</h3>
-
-            <div class="botoes-card">
-
-                <button onclick="event.stopPropagation(); adicionarFavorito(${filme.id})">
-                    ❤️ Favoritar
-                </button>
-
-                <button onclick="event.stopPropagation(); marcarNaoGostei(${filme.id})">
-                    👎 Não gostei
-                </button>
-
-            </div>
         `;
 
         // Ao clicar no card abre a página de detalhes

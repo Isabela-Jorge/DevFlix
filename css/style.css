@@ -102,7 +102,7 @@ button:hover {
 /* Mensagem de erro */
 #mensagemErro {
     text-align: center;
-    color: red;
+    color: rgb(181, 0, 236);
     min-height: 20px;
 }
 
