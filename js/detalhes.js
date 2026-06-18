@@ -13,7 +13,7 @@ document.getElementById("tituloFilme").textContent =
 document.getElementById("descricaoFilme").textContent =
     filme.descricao;
 
-document.getElementById("classificacaoFilme").textContent =
+document.getElementById("classificacao").textContent =
     filme.classificacao;
 
 //busca os botoes da pagina
