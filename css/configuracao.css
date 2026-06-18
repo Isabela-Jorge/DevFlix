@@ -1,45 +1,79 @@
-.tema{
+header{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.opcao {
+    width: 250px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 12px;
-    font-family: sans-serif;
-    margin-top: 15px;
+    color: white;
 }
 
-.label-tema{
-    font-size: 1rem;
-    font-weight: 500;
-    color: aliceblue;
+/* Esconde checkbox padrão */
+.switch input {
+    display: none;
 }
 
-#toggle-tema{
+/* Fundo do botão */
+.switch {
     position: relative;
+    display: inline-block;
     width: 60px;
-    height: 32px;
-    background-color: beige;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    padding: 0;
-    transition: background-color 0.4s ease;
+    height: 34px;
 }
 
-#toggle-tema.slider{
+.slider {
     position: absolute;
-    top: 4px;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #555;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+/* Bolinha */
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
     left: 4px;
-    width: 24px;
-    height: 24px;
-    background-color: antiquewhite;
-    border-radius: 50px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2,1)
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
 }
 
-body.dark-mode #toggle-tema{
-    background-color: azure;
+/* Quando ativado */
+input:checked + .slider {
+    background-color: rgb(107, 54, 156);
 }
 
-body.dark-mode #toggle-tema{
-    transform: translateX(28px);
+input:checked + .slider::before {
+    transform: translateX(26px);
+}
+
+.ContainerC {
+     width: calc(100% - 220px);
+    margin-left: 220px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: white;
+}
+
+.ContainerC h3{
+    color: white;
+    font-size: 32px;
+    margin: 0;
 }

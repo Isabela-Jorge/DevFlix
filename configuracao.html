@@ -1,61 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/catalogo.css">
-    <link rel="stylesheet" href="css/configuracao.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/catalogo.css" />
+    <link rel="stylesheet" href="css/configuracao.css" />
     <title>Configurações</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <aside class="sidebar">
-
-        <h1 class="logo">DEVFLIX</h1>
-        <nav>
-            <ul>
-                <li>
-                   <a href="catalogo.html">Início</a>
-                </li>
-                <li>
-                    <a href="favoritos.html">Favoritos</a>
-                </li>
-                <li>
-                    <a href="naoGostei.html">Não gostei</a>
-                </li>
-                <li>
-                    <a href="assistirDepois.html">Assistir depois</a>
-                </li>
-                <li>
-                    <a href="configuracao.html">Configuração</a>
-                </li>
-                <li>
-                    <a href="perfil.html">Perfil</a>
-                </li>
-
-            </ul>
-        </nav>
+      <h1 class="logo">DEVFLIX</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="catalogo.html">Início</a>
+          </li>
+          <li>
+            <a href="favoritos.html">Favoritos</a>
+          </li>
+          <li>
+            <a href="naoGostei.html">Não gostei</a>
+          </li>
+          <li>
+            <a href="assistirDepois.html">Assistir depois</a>
+          </li>
+          <li>
+            <a href="configuracao.html">Configuração</a>
+          </li>
+          <li>
+            <a href="perfil.html">Perfil</a>
+          </li>
+        </ul>
+      </nav>
     </aside>
-    
-    <div class="containerC">
+
     <header>
-        <h1>Configuração</h1>
+      <h3>Configuração</h3>
     </header>
-    <p>
-        Escolha o tema:
-    </p>
 
+    <div class="ContainerC">
+      <div class="opcao">
+        <label class="switch">
+          <input type="checkbox" id="tema" />
+          <span class="slider"></span>
+        </label>
+      </div>
 
-    <div class="tema">
-    <span class="label-tema">Claro</span>
-    <!-- O botão principal funciona como a pista do interruptor -->
-    <button id="toggle-tema" aria-label="Alternar tema">
-        <span class="slider"></span>
-    </button>
-    <span class="label-tema">Escuro</span>
-</div>
+      <a href="catalogo.html">Voltar</a>
+    </div>
 
-</div>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
