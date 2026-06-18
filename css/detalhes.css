@@ -95,3 +95,46 @@ body {
 #btnComentar:hover {
     background-color: rgb(140, 80, 200);
 }
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.85);
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+}
+
+.modal-container{
+    width:90%;
+    max-width:900px;
+
+    background:#111;
+    border-radius:15px;
+
+    overflow:hidden;
+    position:relative;
+}
+
+.close-modal{
+    position:absolute;
+    top:10px;
+    right:10px;
+
+    width:40px;
+    height:40px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#6B369C;
+    color:white;
+
+    font-size:22px;
+    cursor:pointer;
+
+    z-index:10;
+}
