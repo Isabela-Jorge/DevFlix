@@ -107,7 +107,25 @@ const filmes = [
         descricao: "Light Yagami é um estudante extremamente inteligente que encontra um misterioso caderno chamado Death Note. Ao descobrir que qualquer pessoa cujo nome seja escrito nele morre, Light decide usar esse poder para eliminar criminosos e criar um mundo que considera perfeito. Porém, suas ações chamam a atenção de L, um brilhante detetive determinado a descobrir a identidade do responsável pelas mortes. O anime apresenta uma intensa batalha psicológica repleta de suspense, estratégia e dilemas morais.",
         classificacao: "Gênero: Anime, Suspense, Mistério, Sobrenatural, Psicológico|  Temporadas: 2|  Classificação: 16 anos",
         trailer: "https://youtu.be/NlJZ-YgAt-c?si=OMHHZWCYa6HiunnD"
-    }
+    },
+    {
+        id: 13,
+        titulo: "Como eu era antes de você",
+        imagem: "assets/img/comoeueraantesdevoce.jpg",
+        bannerM: "assets/bannerM/comoeueraBANNER.jpg",
+        descricao: "Louisa Lou Clark é uma jovem alegre e criativa que aceita trabalhar como cuidadora de Will Traynor, um ex-banqueiro rico que ficou tetraplégico após um acidente. Apesar do temperamento difícil de Will, os dois desenvolvem uma forte conexão que transforma suas vidas e os leva a refletir sobre amor, escolhas e o significado de viver plenamente.",
+        classificacao: "Gênero: Drama, Romance.|Classificação: 12 anos",
+        trailer: "https://youtu.be/TxdtrenZ92M?si=f3XVQEU5S-xibjzu"
+    },
+    {
+        id: 14,
+        titulo: "Como eu era antes de você",
+        imagem: "assets/img/comoeueraantesdevoce.jpg",
+        bannerM: "assets/bannerM/comoeueraBANNER.jpg",
+        descricao: "Louisa Lou Clark é uma jovem alegre e criativa que aceita trabalhar como cuidadora de Will Traynor, um ex-banqueiro rico que ficou tetraplégico após um acidente. Apesar do temperamento difícil de Will, os dois desenvolvem uma forte conexão que transforma suas vidas e os leva a refletir sobre amor, escolhas e o significado de viver plenamente.",
+        classificacao: "Gênero: Drama, Romance.|Classificação: 12 anos",
+        trailer: "https://youtu.be/TxdtrenZ92M?si=f3XVQEU5S-xibjzu"
+    },
 
 ];
 
