@@ -3,18 +3,13 @@ const filme = JSON.parse(localStorage.getItem("filmeSelecionado"));
 
 // Coloca as informações na tela
 document.getElementById("imagemFilme").src = filme.bannerM;
-
 document.getElementById("tituloFilme").textContent = filme.titulo;
-
 document.getElementById("descricaoFilme").textContent = filme.descricao;
-
 document.getElementById("classificacaoFilme").textContent = filme.classificacao;
 
 //busca os botoes da pagina
 const btnFavorito = document.getElementById("btnFavorito");
-
 const btnNaoGostei = document.getElementById("btnNaoGostei");
-
 const btnAssistirDepois = document.getElementById("btnAssistirDepois");
 
 // função para favoritar
@@ -40,7 +35,6 @@ btnFavorito.addEventListener("click", () => {
 });
 
 // função para Não gostei
-
 btnNaoGostei.addEventListener("click", () => {
   let naogostei =
     JSON.parse(localStorage.getItem("naogostei")) || // o json.parse transforma a string em objeto novamente
@@ -64,7 +58,6 @@ btnNaoGostei.addEventListener("click", () => {
 });
 
 // função para assistir depois
-
 btnAssistirDepois.addEventListener("click", () => {
   let assistirdepois =
     JSON.parse(localStorage.getItem("assistirdepois")) || // o json.parse transforma a string em objeto novamente
@@ -91,6 +84,8 @@ const modal = document.getElementById("modalTrailer");
 const iframe = document.getElementById("videoTrailer");
 
 document.getElementById("btnTrailer").addEventListener("click", () => {
+  console.log("Filme:", filme);
+console.log("Trailer:", filme.trailer);
   iframe.src = filme.trailer + "?autoplay=1";
 
   modal.style.display = "flex";

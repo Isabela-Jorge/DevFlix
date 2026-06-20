@@ -1,12 +1,14 @@
 body{
     background-color: #141414 ;
+    overflow-x: hidden;
 }
 
+/*barra de navegação*/
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 220px;
+    width: 200px;
     height: 100vh;
     background-color: #0f0f0f;
     padding-top: 20px;
@@ -48,8 +50,10 @@ body{
     display: block;
 }
 
+
+
 .container {
-    width: 90%;
+    width: calc(100% - 200px);
     
      background: linear-gradient(
         to bottom,
@@ -57,12 +61,13 @@ body{
         #141414,
         rgba(107, 54, 156, 0.2));
 
-    margin-left: 220px;
-    padding: 20px;
+    margin-left: 200px;
+    padding: 0;
     min-height: 100vh;
     color: white;
 }
 
+/*card dos filme*/
 .slide {
     display: none;
 }
@@ -166,7 +171,7 @@ h2 {
 .banner img {
     width: 100%;
     height: 350px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .slide {
@@ -254,7 +259,74 @@ h2 {
     transform: translateY(-50%) scale(1.1);
 }
 
-/*responsividade*/
+/*tema claro*/
+
+body.tema-claro{
+    background-color: #ffffff ;
+    overflow-x: hidden;
+}
+
+body.tema-claro .sidebar {
+    background-color: #e6e6e6;
+    color: #111;
+}
+
+body.tema-claro .sidebar a {
+    color: #111;
+}
+
+body.tema-claro .container {
+    background: #ffffff !important;
+    color: #111;
+}
+
+body.tema-claro .card-filme {
+    background-color: #f0f0f0;
+    color: #111;
+}
+
+body.tema-claro .botoes-card button {
+    background-color: #6B369C;
+    color: white;
+}
+
+body.tema-claro .container,
+body.tema-claro .containerF,
+body.tema-claro .perfil-container,
+body.tema-claro .perfis,
+body.tema-claro .ContainerC {
+    background: #ffffff;
+    color: #111;
+}
+
+body.tema-claro .card-filme {
+    background-color: #f2f2f2;
+    color: #111;
+}
+
+body.tema-claro .lista-favoritos,
+body.tema-claro .lista-nao-gostei {
+    background-color: #ffffff;
+    color: #111;
+}
+
+body.tema-claro button {
+    background-color: #6B369C;
+    color: white;
+}
+
+body.tema-claro .perfil {
+    background-color: #f2f2f2;
+    color: #111;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+body.tema-claro header h1 {
+    color: #111 !important;
+}
+
+/*responsividade notebook*/
 @media (max-width: 1366px) {
 
     .sidebar {

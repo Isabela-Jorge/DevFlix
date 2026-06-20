@@ -1,1 +1,110 @@
+body {
+    background-color: #0f0f0f;
+    color: white;
+    transition: 0.3s ease;
+}
 
+body.tema-claro {
+    background-color: #ffffff;
+    color: #111;
+}
+
+body.tema-claro .ContainerC {
+    color: #111;
+}
+
+.ContainerC{
+    margin-left: 200px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    transition: 0.3s ease;
+}
+
+.opcao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SWITCH */
+
+.switch{
+    position: relative;
+    display: inline-block;
+
+    width: 60px;
+    height: 34px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #555;
+    transition: .4s;
+
+    border-radius: 34px;
+}
+
+.slider::before{
+    content: "";
+
+    position: absolute;
+
+    width: 26px;
+    height: 26px;
+
+    left: 4px;
+    bottom: 4px;
+
+    background-color: white;
+
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider{
+    background-color: #6B369C;
+}
+
+input:checked + .slider::before{
+    transform: translateX(26px);
+}
+
+/* BOTÃO VOLTAR */
+
+.ContainerC a{
+    text-decoration: none;
+
+    background-color: #6B369C;
+    color: white;
+
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
+    transition: .3s;
+}
+
+.ContainerC a:hover{
+    background-color: #8249b8;
+    transform: scale(1.05);
+}
