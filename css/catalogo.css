@@ -1,3 +1,4 @@
+/*tema escuro (base)*/
 body{
     background-color: #141414 ;
     overflow-x: hidden;
@@ -260,14 +261,20 @@ h2 {
 }
 
 /*tema claro*/
+body.tema-claro h2 {
+    color: #111;
+}
 
+body.tema-claro h1 {
+    color: #ffffff;
+}
 body.tema-claro{
-    background-color: #ffffff ;
+    background-color: #bebebe ;
     overflow-x: hidden;
 }
 
 body.tema-claro .sidebar {
-    background-color: #e6e6e6;
+    background-color: #d6d6d6;
     color: #111;
 }
 
@@ -276,7 +283,7 @@ body.tema-claro .sidebar a {
 }
 
 body.tema-claro .container {
-    background: #ffffff !important;
+    background: #bebebe !important;
     color: #111;
 }
 
@@ -290,13 +297,47 @@ body.tema-claro .botoes-card button {
     color: white;
 }
 
+/* Container */
 body.tema-claro .container,
 body.tema-claro .containerF,
-body.tema-claro .perfil-container,
-body.tema-claro .perfis,
-body.tema-claro .ContainerC {
-    background: #ffffff;
+body.tema-claro .containerM,
+body.tema-claro .ContainerC{
+    background-color: #bebebe;
     color: #111;
+}
+
+body.tema-claro .card-filme,
+body.tema-claro .perfis,
+body.tema-claro .comentarios{
+    background-color: #bebebe;
+    color: #111;
+}
+
+body.tema-claro .comentarios {
+    background-color: #f2f2f2;
+}
+
+body.tema-claro #comentario {
+    background-color: #ffffff;
+    color: #111;
+    border: 1px solid #ccc;
+}
+
+/* Textarea */
+body.tema-claro .comentarios {
+    background-color: #f2f2f2;
+}
+
+body.tema-claro #comentario {
+    background-color: #ffffff;
+    color: #111;
+    border: 1px solid #ccc;
+}
+
+/* Botão comentar */
+body.tema-claro .btnComentar {
+    background-color: #6B369C;
+    color: white;
 }
 
 body.tema-claro .card-filme {
@@ -304,9 +345,8 @@ body.tema-claro .card-filme {
     color: #111;
 }
 
-body.tema-claro .lista-favoritos,
-body.tema-claro .lista-nao-gostei {
-    background-color: #ffffff;
+body.tema-claro .card-filmeF {
+    background-color: #f2f2f2;
     color: #111;
 }
 
