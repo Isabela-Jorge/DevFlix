@@ -51,8 +51,6 @@ body{
     display: block;
 }
 
-
-
 .container {
     width: calc(100% - 200px);
     
@@ -300,14 +298,16 @@ body.tema-claro .botoes-card button {
 /* Container */
 body.tema-claro .container,
 body.tema-claro .containerF,
-body.tema-claro .containerM,
-body.tema-claro .ContainerC{
+body.tema-claro .containerM{
     background-color: #bebebe;
     color: #111;
 }
 
+body.tema-claro .ContainerC{
+    background-color: #bebebe;
+}
+
 body.tema-claro .card-filme,
-body.tema-claro .perfis,
 body.tema-claro .comentarios{
     background-color: #bebebe;
     color: #111;
@@ -332,6 +332,10 @@ body.tema-claro #comentario {
     background-color: #ffffff;
     color: #111;
     border: 1px solid #ccc;
+}
+
+body.tema-claro #classificacao{
+    color: #111;
 }
 
 /* Botão comentar */
