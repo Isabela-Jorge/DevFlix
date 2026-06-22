@@ -2,6 +2,7 @@ body {
     background-color: #0f0f0f;
     color: white;
     transition: 0.3s ease;
+    
 }
 
 body.tema-claro {
@@ -108,3 +109,4 @@ input:checked + .slider::before{
     background-color: #8249b8;
     transform: scale(1.05);
 }
+
