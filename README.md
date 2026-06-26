@@ -1,4 +1,4 @@
-# 🎬 DevFlix
+# DevFlix
 
 Projeto desenvolvido como atividade acadêmica, simulando uma plataforma de streaming de filmes.
 
