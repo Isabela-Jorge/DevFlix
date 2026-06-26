@@ -294,12 +294,3 @@ btnPrev.addEventListener("click", () => {
 
 // Primeiro slide
 mostrarSlide(slideAtual);
-
-//botao de limpar localStorage
-function limparDados() {
-  localStorage.clear();
-
-  alert("Dados apagados!");
-
-  location.reload();
-}

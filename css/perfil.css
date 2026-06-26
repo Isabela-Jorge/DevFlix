@@ -1,16 +1,11 @@
 h1{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 248, 248);
 }
 
 .perfil-container{
     text-align: center;
     margin-left: 220px;
-    background: linear-gradient(
-        135deg,
-        #bebebe,
-         #f0f0f0,
-         #6B369C 
-)};
+}
 
 .perfil-container h1{
     margin-bottom: 40px;

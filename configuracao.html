@@ -35,21 +35,90 @@
     </aside>
 
     <div class="ContainerC">
+      <h2>Configurações</h2>
 
-      <h2>Configuração</h2>
+      <div class="card-config">
+        <div class="linha">
+          <div class="texto">
+            <h3>Tema</h3>
+            <p>Escolha entre o modo claro e o modo escuro.</p>
+          </div>
 
-      <div class="opcao">
+          <div class="opcao">
+            <span>&#127769;</span>
 
-        <label class="switch">
-          <input type="checkbox" id="tema" />
-          <span class="slider"></span>
-        </label>
+            <label class="switch">
+              <input type="checkbox" id="tema" />
+              <span class="slider"></span>
+            </label>
+
+            <span>&#9728;</span>
+          </div>
+        </div>
       </div>
 
-      <a href="catalogo.html">Voltar</a>
-    </div>
+      <div class="card-config">
+        <div class="linha">
+          <div class="texto">
+            <h3>Notificações</h3>
+            <p>Receber avisos sobre novos filmes.</p>
+          </div>
 
-    <script src="js/configuracao.js"></script>
-    <script src="js/temaclaro.js"></script>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="card-config">
+        <div class="linha">
+          <div class="texto">
+            <h3>Reprodução automática</h3>
+            <p>Reproduzir trailers automaticamente.</p>
+          </div>
+
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="card-config">
+        <div class="linha">
+          <h3>Idioma</h3>
+
+          <select>
+            <option>Português</option>
+            <option>English</option>
+            <option>Español</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card-config">
+        <div class="linha">
+          <h3>Qualidade padrão</h3>
+
+          <select>
+            <option>Automática</option>
+            <option>1080p</option>
+            <option>720p</option>
+            <option>480p</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="botoes-config">
+        <button>Salvar alterações</button>
+        <button onclick="limparDados()">Restaurar padrão</button>
+      </div>
+
+      <a href="catalogo.html">← Voltar ao catálogo</a>
+
+      <script src="js/configuracao.js"></script>
+      <script src="js/temaclaro.js"></script>
+    </div>
   </body>
 </html>

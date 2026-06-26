@@ -259,13 +259,22 @@ h2 {
 }
 
 /*tema claro*/
+
 body.tema-claro h2 {
     color: #111;
 }
-
 body.tema-claro h1 {
     color: #ffffff;
 }
+
+body.tema-claro h3 {
+    color: #111;
+}
+
+body.tema-claro .card-config p{
+    color: #333;
+}
+
 body.tema-claro{
     background-color: #bebebe ;
     overflow-x: hidden;
@@ -305,6 +314,17 @@ body.tema-claro .containerM{
 
 body.tema-claro .ContainerC{
     background-color: #bebebe;
+}
+
+body.tema-claro select{
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #ccc;
+}
+
+body.tema-claro .card-config{
+    background-color: #ffffff;
+    color: #111;
 }
 
 body.tema-claro .card-filme,
