@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo da página */
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+  135deg,
+  rgb(107, 54, 156),
+  rgb(168, 85, 247),
+  rgb(96, 165, 250)
+);
+}
+
+/* Camada escura (overplay) */
+.overplay {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caixa do login */
+.container-login {
+    background-color: rgb(33, 33, 36);
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo */
+.logo {
+    font-family: Impact, sans-serif;
+    font-size: 3rem;
+    color: rgb(107, 54, 156);
+    text-align: center;
+
+    animation: entradaLogo 2s ease-out forwards;
+}
+
+/* Animação */
+@keyframes entradaLogo {
+    from {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Formulário */
+form {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f1f1f; 
+    color: white;
+    outline: none;
+}
+
+/* efeito ao clicar */
+input:focus {
+    box-shadow: 0 0 8px rgb(107, 54, 156);
+}
+
+/* Botão */
+button {
+    width: 120px;
+    padding: 12px;
+    align-self: center;
+    background-color: rgb(107, 54, 156);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(56, 27, 83);
+}
+
+/* Mensagem de erro */
+#mensagemErro {
+    text-align: center;
+    color: rgb(181, 0, 236);
+    min-height: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}

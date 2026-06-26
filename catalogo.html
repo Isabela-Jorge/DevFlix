@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/catalogo.css" />
+    <title>Catálogo - DEVFLIX</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <h1 class="logo">DEVFLIX</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="catalogo.html">Início</a>
+          </li>
+          <li>
+            <a href="favoritos.html">Favoritos</a>
+          </li>
+          <li>
+            <a href="naoGostei.html">Não Gostei</a>
+          </li>
+          <li>
+            <a href="assistirDepois.html">Assistir Depois</a>
+          </li>
+          <li>
+            <a href="configuracao.html">Configuração</a>
+          </li>
+          <li>
+            <a href="perfil.html">Perfil</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="container">
+
+      <section id="banner" class="banner">
+
+        <div class="carrossel">
+
+          <div class="slides">
+
+            <div class="slide active">
+              <img src="assets/img/banner1.jpg" alt="Filme 1" />
+
+              <div class="banner-desc">
+                <h1>Michael Jackson</h1>
+
+                <p>
+                  O Rei do Pop revolucionou a música mundial com seu talento,
+                  performances inesquecíveis e sucessos que marcaram gerações.
+                  Conheça a trajetória do artista que se tornou um dos maiores
+                  ícones da história do entretenimento.
+                </p>
+
+                <button>&#11208 Assistir Agora</button>
+              </div>
+
+            </div>
+
+            <div class="slide">
+              <img src="assets/img/banner2.jpg" alt="Filme 2" />
+            </div>
+
+            <div class="slide">
+              <img src="assets/img/banner3.jpg" alt="Filme 3" />
+            </div>
+            
+          </div>
+
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+
+        </div>
+        
+      </section>
+      <h2>Filmes Populares</h2>
+
+      <section id="listaFilmes" class="cards-container"></section>
+
+    </main>
+
+    <script src="js/catalogo.js"></script>
+    <script src="js/temaclaro.js"></script>
+    
+  </body>
+</html>

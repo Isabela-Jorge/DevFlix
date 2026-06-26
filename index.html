@@ -1,13 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/catalogo.css" />
     <title>DevFlix</title>
-</head>
-<body>
-    <div class="Container-login">
-        
+  </head>
+
+  <body>
+    <div class="overplay">
+      <div class="container-login">
+        <h1 class="logo">DEVFLIX</h1>
+
+        <form>
+          <input type="text" id="usuario" placeholder="Usuário" required />
+
+          <input type="password" id="senha" placeholder="Senha" required />
+
+          <button type="submit">Enviar</button>
+
+          <p id="mensagemErro"></p>
+        </form>
+      </div>
     </div>
-</body>
+
+    <footer>
+      <p>&#169; 2026 DevFlix - Todos os direitos reservados</p>
+      <p>Desenvolvido por Isabela Jorge e Daniela Marques DS1</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/temaclaro.js"></script>
+  </body>
 </html>

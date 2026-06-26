@@ -1,0 +1,171 @@
+body{
+    background-color:#0f0f0f;
+    color:white;
+    transition:.3s;
+}
+
+.ContainerC{
+    margin-left:220px;
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    gap:20px;
+}
+
+.ContainerC h2{
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+/* Cards */
+
+.card-config{
+    width:700px;
+    background:#1b1b1b;
+    border:1px solid #2b2b2b;
+    border-radius:12px;
+    padding:20px 25px;
+}
+
+.linha{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.texto{
+    flex:1;
+}
+
+.texto h3{
+    margin:0 0 8px;
+}
+
+.texto p{
+    margin:0;
+    color:#bdbdbd;
+}
+
+/* Tema */
+
+.opcao{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.opcao span{
+    font-size:24px;
+}
+
+/* Select */
+
+select{
+    width:170px;
+    padding:10px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#292929;
+    color:white;
+}
+
+/* Switch */
+
+.switch{
+    position:relative;
+    width:60px;
+    height:34px;
+}
+
+.switch input{
+    opacity:0;
+    width:0;
+    height:0;
+}
+
+.slider{
+    position:absolute;
+    inset:0;
+
+    background:#555;
+    border-radius:34px;
+
+    cursor:pointer;
+    transition:.4s;
+}
+
+.slider::before{
+    content:"";
+    position:absolute;
+
+    width:26px;
+    height:26px;
+
+    left:4px;
+    bottom:4px;
+
+    background:white;
+    border-radius:50%;
+
+    transition:.4s;
+}
+
+input:checked + .slider{
+    background:#6B369C;
+}
+
+input:checked + .slider::before{
+    transform:translateX(26px);
+}
+
+/* Botões */
+
+.botoes-config{
+    width:700px;
+    display:flex;
+    gap:15px;
+}
+
+.botoes-config button{
+    flex:1;
+
+    padding:12px;
+
+    background:#6B369C;
+    color:white;
+
+    border:none;
+    border-radius:10px;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.botoes-config button:hover{
+    background:#8249b8;
+}
+
+.ContainerC a{
+    text-decoration:none;
+
+    background:#6B369C;
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.ContainerC a:hover{
+    background:#8249b8;
+    transform:scale(1.05);
+}
